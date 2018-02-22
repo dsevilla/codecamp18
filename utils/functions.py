@@ -86,3 +86,13 @@ class DictTable(dict):
             html.append("</tr>")
         html.append("</table>")
         return ''.join(html)
+
+class ListDictTable(list):
+    def _repr_html_(self):
+        html = ["<ul>"]
+        for i in self:
+            html.append("<li>")
+            html.append(DictTable(i)._repr_html_())
+            html.append("</li>")
+        html.append("</ul>")
+        return ''.join(html)
