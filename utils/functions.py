@@ -1,12 +1,3 @@
-from IPython.display import Image
-from pprint import pprint as pp
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib
-
-%matplotlib inline
-matplotlib.style.use('ggplot')
-
 from PIL import ImageFont
 from PIL import ImageDraw
 from PIL import Image as PImage
