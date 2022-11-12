@@ -1,4 +1,4 @@
-FROM jupyter/all-spark-notebook
+FROM jupyter/scipy-notebook
 
 MAINTAINER dsevilla@um.es
 
